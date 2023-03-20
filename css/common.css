@@ -1,0 +1,27 @@
+/* include ROBOTO font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* include outfit */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root{
+    --green-main-color: #225F5F;
+    --green-dark-color: #01282E;
+    --green-light-color:#E8F0F0;
+    --grey-main-color:#D9D9D9;
+    --grey-second-color:#FFFFFF;
+    --yellow-color: #F5C062;
+    --yellow-dark-color: #FDA300;
+    --yellow-light-color: #FBEACA;
+    --grey-color: #CCCCCC;
+    --yellow-color: #F5C062;
+    --background-color:#F8F9FD;
+    /* fonts */
+    --roboto-font:'Roboto', sans-serif;
+    --outfit-font:'Outfit', sans-serif;
+}
+
+body{
+    min-height: 3700px;
+    background-color: var(--background-color);
+    font-family: var(--roboto-font);
+}
+
