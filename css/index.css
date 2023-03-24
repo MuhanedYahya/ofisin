@@ -3,7 +3,6 @@ header .ofisin-header{
     height:920px;
     position: relative;
     overflow: hidden !important;
-    width: 100vw;
     background-image: url(../img/header/header.svg);
     background-repeat:no-repeat;
     background-size: cover;
@@ -206,7 +205,7 @@ header .ofisin-header .ofisin-header-vectors .vector:nth-child(5):hover{
 .features .feature-box{
     background-color: var(--green-light-color);
     min-height: 260px;
-    box-shadow: 0 3px 15px rgba(0,0,0,0.25);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.10);
 }
 .features .feature-box span{
     font-weight:lighter;
@@ -297,14 +296,14 @@ header .ofisin-header .ofisin-header-vectors .vector:nth-child(5):hover{
 .categories .container .category-box{
     background-color: #fff;
     text-align: left;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.10);
     cursor: pointer;
     margin: 10px;
     min-height: 315px;
     transition-duration: 300ms;
 }
 .categories .container .category-box:hover{
-    box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.20);
 }
 .categories .container .category-box .category-vector-box{
     display: inline-block;
@@ -405,12 +404,11 @@ header .ofisin-header .ofisin-header-vectors .vector:nth-child(5):hover{
 
 /* startNow start ****************************************/
 .startNow .container{
-    background: url(../img/main/main.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    /* height: 363px; */
+    background: linear-gradient(to right,#3F3D56,#407575);
     height: 371px;
     cursor: pointer;
+    transition-duration: 5s;
+    transition-timing-function: ease-in;
 }
 .startNow .container:hover .row h1{
    color: #fff;;
@@ -440,15 +438,12 @@ header .ofisin-header .ofisin-header-vectors .vector:nth-child(5):hover{
 }
 .startNow .container .row button:hover {
     box-shadow:0 2px 15px 0 var(--yellow-light-color);
+    color: #fff;
 }
 /* startNow end ****************************************/
 
 /* footer start ****************************************/
 footer .ofisin-footer{
-    /* background: url(../img/footer/footer.svg);
-    background-repeat: no-repeat;
-    background-position:bottom;
-    background-size:cover; */
     background-color: var(--green-dark-color);
     min-height: 720px;
     color: var(--grey-color);
@@ -469,6 +464,7 @@ footer .ofisin-footer::after{
 
 footer .ofisin-footer .footer-brands-box{
     position: relative;
+    text-transform: capitalize;
 }
 footer .ofisin-footer .footer-brands-box h6{
     font-weight: normal;
@@ -592,7 +588,7 @@ footer .ofisin-footer .footer-reachUs-box:hover::after{
         order: 1 !important;
     }
     .steps .container .row .step-box h4{
-        margin-top: 60px;
+        margin-top: 80px;
     }
     .steps .container .row .step-box h4::before{
         top: 0;
@@ -606,14 +602,12 @@ footer .ofisin-footer .footer-reachUs-box:hover::after{
     }
 
     /* steps end ****************************************/
-
     
     /* startNow start ****************************************/
     .startNow .container .row h1{ 
         width: 80%;
     }
     /* startNow end ****************************************/
-
     
     /* footer start ****************************************/
     footer .ofisin-footer .footer-brands-list li{
