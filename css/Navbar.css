@@ -1,0 +1,72 @@
+
+.ofisin-main-navbar{
+    height: 90px;
+    background-color: var(--green-dark-color);
+}
+.ofisin-main-logo {
+    margin-top: -13px;
+}
+
+.ofisin-main-logo a{
+    font-weight: bold;
+    font-size: 1.4em;
+    font-family: var(--outfit-font);
+    color: white !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+}
+.ofisin-main-navbar-item{
+    margin: 0px 20px;
+}
+
+.ofisin-main-navbar-item a{
+    color: var(--grey-main-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1rem;
+    opacity: 85%;
+    color: var(--grey-second-color);
+}
+.ofisin-main-navbar-item a:hover{
+    opacity: 1;
+}
+
+.ofisin-main-navbar-list svg{
+    font-size: 1rem;
+    color: var( --yellow-dark-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.ofisin-main-navbar-list .ofisin-main-navbar-profile-picture{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url(../img/profile.jpeg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+
+}
+
+.login-signup-main{
+    margin: 50px 0px 200px 0px !important;
+}
+.login-signup-main p:nth-child(1){
+    text-transform: uppercase;
+    color: #7C7C7C;
+}
+.login-signup-main a:last-child{
+    text-transform: capitalize;
+    color: var(--yellow-dark-color);
+}
+
+.login-signup-btn{
+    background-color: var( --green-main-color);
+    color: white;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+
+}
