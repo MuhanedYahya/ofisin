@@ -53,66 +53,33 @@ header .ofisin-header::after{
 }
 /* shape divider end *****************************************/
 
-/* header navbar ****************************************/
-header .ofisin-header .ofisin-navbar .ofisin-logo a{
-    font-weight: bold;
-    font-size: 1.6em;
-    opacity: 50%;
-    font-family: var(--outfit-font);
-    color: var(--grey-second-color);
-}
-header .ofisin-header .ofisin-navbar .ofisin-logo a:hover{
-    opacity: 60%;
-    transition-duration: 500ms;
-}
-header .ofisin-header .ofisin-navbar .ofisin-navbar-item{
-    min-width: 90px;
-}
-header .ofisin-header .ofisin-navbar li{
-    float: left;
-    margin: 0px 20px;
-    word-break:keep-all;
-}
-header .ofisin-header .ofisin-navbar li a,.ofisin-logo a{
-    color: var(--grey-main-color);
-    text-transform: uppercase;
-    text-decoration: none;
-    opacity: 75%;
-    font-weight: 500;
-    font-size: 1.1rem;
-}
-header .ofisin-header .ofisin-navbar li a:hover{
-    color: #fff;
-}
-header .ofisin-header .ofisin-navbar .ofisin-navbar-btn1,.ofisin-navbar-btn2{
-    padding: 5px 15px;
-    outline: 0;
-    border: 0;
-    color: var(--yellow-dark-color);
-    min-width: 100px;
-}
-header .ofisin-header .ofisin-navbar .ofisin-navbar-btn1{
-    color: var(--yellow-light-color);
+/* navbar overwrite START ****************************************/
+.ofisin-main-navbar{
     background: transparent;
-    outline: 1px solid var(--yellow-dark-color);
 }
-header .ofisin-header .ofisin-navbar .ofisin-navbar-btn1:hover{
-    outline: 2px solid var(--yellow-dark-color);
+.ofisin-main-logo a{
+    opacity: 50%;
+    color: var(--grey-second-color);
+    font-weight: bold;
+    transition-duration: .4s;
 }
-header .ofisin-header .ofisin-navbar .ofisin-navbar-btn2{
-    color: var(--yellow-light-color);
-    background: var(--yellow-dark-color);
+.ofisin-main-logo a:hover{
+    opacity: 100%;
 }
-header .ofisin-header .ofisin-navbar .ofisin-navbar-btn2:hover{
-    color: #fff;
-    transition-duration: 200ms;
-}
-/* header navbar end ****************************************/
+/* navbar overwrite END ****************************************/
+
 
 /* greetings start ****************************************/
 header .ofisin-header-greetings{
     z-index: 1;
 }
+
+header .ofisin-header-greetings .hvr-sweep-to-right::before{
+    background: var(--yellow-dark-color);
+    transition-duration: .3s;
+    border-radius:  var(--bs-border-radius-lg);
+}
+
 header .ofisin-header-greetings .header-greeting{
     font-family: var(--outfit-font);
     font-size: 4vw;
@@ -136,9 +103,7 @@ header .ofisin-header-greetings .header-greeting-btn {
     transition-duration: 500ms;
     transition-timing-function:ease;
 }
-header .ofisin-header-greetings .header-greeting-btn:hover {
-    box-shadow:0 5px 20px 0 var(--yellow-light-color);
-}
+
 header .ofisin-header-greetings .header-greeting-btn span{
     vertical-align:middle;
     font-size: 1.5rem;
@@ -181,31 +146,15 @@ header .ofisin-header .ofisin-header-vectors .vector:nth-child(5){
 header .ofisin-header .ofisin-header-vectors .vector:nth-child(6){
     transform: translate(-65px,-1000px);
 }
-/* hovering */
-header .ofisin-header .ofisin-header-vectors .vector:nth-child(1):hover{
-    transform: translate(-150px,-20px);
-}
-/* header .ofisin-header .ofisin-header-vectors .vector:nth-child(2):hover{
-    transform: translate(-250px,-220px);
-} */
-/* header .ofisin-header .ofisin-header-vectors .vector:nth-child(3):hover{
-    transform: translate(-300px,-280px);
-} */
-header .ofisin-header .ofisin-header-vectors .vector:nth-child(4):hover{
-    transform: translate(470px,-850px);
-}
-header .ofisin-header .ofisin-header-vectors .vector:nth-child(5):hover{
-    z-index: 2;
-    transform: translate(-150px,-650px);
-}
+
 /* vectors end ****************************************/
 
 
 /* features start ****************************************/
 .features .feature-box{
-    background-color: var(--green-light-color);
+    /* background-color: var(--green-light-color); */
     min-height: 260px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.10);
+    /* box-shadow: 0 5px 10px rgba(0,0,0,0.10); */
 }
 .features .feature-box span{
     font-weight:lighter;

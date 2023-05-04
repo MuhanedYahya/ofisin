@@ -1,12 +1,11 @@
 /* footer start ****************************************/
 footer .ofisin-footer{
-    background-color: var(--green-dark-color);
-    min-height: 720px;
+    background: rgb(34,95,95);
+    background: linear-gradient(90deg, rgba(34,95,95,1) 0%, rgba(25,64,64,1) 0%, rgba(1,40,46,1) 50%); 
     color: var(--grey-color);
     overflow: hidden;
     position: relative;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
+
 }
 footer .ofisin-footer::after{
     content: "";
@@ -24,12 +23,15 @@ footer .ofisin-footer .footer-brands-box{
 }
 footer .ofisin-footer .footer-brands-box h6{
     font-weight: normal;
+    font-size:.9rem;
 }
 footer .ofisin-footer h5{
     text-transform: uppercase;
     position: relative;
+    font-size: 1rem;
 }
 footer .ofisin-footer h5 span{
+    font-size: 1.2rem;
     vertical-align: middle;
     position: absolute;
     top: 0;
@@ -52,13 +54,14 @@ footer .ofisin-footer .footer-brands-box::before{
 footer .ofisin-footer .ofisin-logo a{
     opacity: 100%;
     color: #fff !important;
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-weight: 600;
     opacity: 80%;
     text-transform: uppercase;
 }
 footer .ofisin-footer ul li{
     margin: 25px 0px;
+    font-size: .8rem;
 }
 footer .ofisin-footer  a{
     color: var(--grey-color);
@@ -71,22 +74,23 @@ footer .ofisin-footer ul li a:hover{
 footer .ofisin-footer .footer-brands-list li{
     float: left;
     margin: 20px;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 footer .ofisin-footer .footer-followUs-list li{
     float: left;
     margin: 10px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 footer .ofisin-footer .footer-reachUs-box{
-    width: 370px;
+    width: 250px;
     height:45px;
     background-color: #0E3338;
     position: relative;
     font-size: 1.3rem;
     text-transform: capitalize;
     cursor: pointer;
+    font-size: .9rem;
 }
 
 footer .ofisin-footer .footer-reachUs-box::after{
@@ -96,7 +100,7 @@ footer .ofisin-footer .footer-reachUs-box::after{
     border-radius: 20px;
     background-color: #D9D9D9;
     z-index: 2;
-    width: 100px;
+    width: 80px;
     top: 0;
     right: 0;
     text-transform: capitalize;
@@ -109,6 +113,7 @@ footer .ofisin-footer .footer-reachUs-box::after{
     cursor: pointer;
     transition-duration: 300ms;
     transition-timing-function: ease;
+    font-size: .9rem;
 }
 footer .ofisin-footer .footer-reachUs-box:hover::after{
     background-color: #fff;

@@ -1,0 +1,54 @@
+
+.login-signup-main{
+    margin: 50px 0px 100px 0px !important;
+}
+.login-signup-main p:nth-child(1){
+    text-transform: uppercase;
+    color: #7C7C7C;
+}
+.login-signup-main a:last-child{
+    text-transform: capitalize;
+    color: var(--yellow-dark-color);
+}
+
+.login-signup-btn{
+    background: rgb(34,95,95);
+    background: linear-gradient(90deg, rgba(34,95,95,1) 0%, rgba(34,95,95,1) 0%, rgba(34,95,95,1) 50%); 
+    color: white;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    transition-duration:.5s;
+    transition-timing-function: ease-in-out;
+}
+.login-signup-btn:hover{
+    background: linear-gradient(90deg, rgba(34,95,95,1) 0%, rgba(44,121,121,1) 50%, rgba(34,95,95,1) 100%); 
+}
+
+.login-form-parent .form-control::before{
+    position: absolute;
+    font-family: 'Material Icons';
+    content: "/f084";
+    --webkit-font-feature-settings: 'liga';
+    left: 0;
+    top: 0;
+    color: black !important;
+
+}
+
+.social-btn{
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    transition-duration:.5s;
+    transition-timing-function: ease-in-out;
+    background-color: #fff;
+    border : var(--bs-border-width) solid var(--bs-border-color)
+}
+
+.fa-facebook-f{
+    color:#4267B2;
+}
+.fa-google{
+    color: #DB4437;
+}

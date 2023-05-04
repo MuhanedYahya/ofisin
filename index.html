@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="./css/all.min.css">
     <!-- our styles -->
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/Navbar.css">
+    <link rel="stylesheet" href="./css/index.css">
+
     <title>Ofisin</title>
 </head>
 <body>
@@ -26,45 +28,152 @@
             <!-- header -->
             <div class="row">
                 <!-- header navbar -->
-                <div class="col-12 ofisin-navbar">
-                    <div class="container">
-                        <div class="row  m-4">
-                            <div class="col-4">
-                                <div class="ofisin-logo">
-                                    <a href="#">ofısın</a>
+                <nav>
+                    <div class="container-fluid ofisin-main-navbar">
+                        <div class="row h-100 align-items-center">
+                            <!-- navbar logo -->
+                            <div class="col d-flex justify-content-xs-start justify-content-sm-center ms-2 ms-sm-0" >
+                                <div class="ofisin-main-logo">
+                                    <a href="index.html">ofısın</a>
                                 </div>
                             </div>
-                            <div class="col-8">
-                                <ul class="list-unstyled d-flex align-items-center justify-content-end">
-                                    <li class="ofisin-navbar-item d-none d-lg-block ">
-                                        <a href="#">projeler</a>
+            
+                            <!-- navbar main links -->
+                            <div class="col d-none d-lg-flex justify-content-center pages-links-col">
+                                <ul class="list-unstyled d-flex justify-content-center align-items-center">
+                                    <li class="ofisin-main-navbar-item ofisin-main-navbar-pages text-nowrap">
+                                        <a href="#">
+                                            projeler <span class="badge bg-secondary align-top">Yeni</span>
+                                        </a>
                                     </li>
-                                    <li class="ofisin-navbar-item d-none d-lg-block text-center">
+                                    <li class="ofisin-main-navbar-item ofisin-main-navbar-pages text-nowrap">
                                         <a href="#">biz kimiz</a>
                                     </li>
-                                    <li class="ofisin-navbar-item d-none d-lg-block">
+                                    <li class="ofisin-main-navbar-item ofisin-main-navbar-pages">
                                         <a href="#">iletişim</a>
                                     </li>
-                                    <li class="d-none d-lg-block">
-                                        <a href="#">
-                                            <span class="material-symbols-outlined">search</span>
+                                    <li class="ofisin-main-navbar-item">
+                                        <div class="search-box">
+                                            <form action="post">
+                                                <button  class="btn-search" type="submit"><span class="material-symbols-outlined">search</span></button>
+                                                <input type="text" class="input-search" placeholder="Buraya yazınız..">
+                                            </form>
+                                          </div>
+                                    </li>
+                                </ul>
+                            </div>
+            
+                            <!-- navbar right side section for users who are logged in -->
+                            <div class="col d-none justify-content-sm-center ms-2 ms-sm-0">
+                                
+                                <ul class="list-unstyled d-flex align-items-baseline">
+                                    <!-- Notifications parent-->
+                                    <li class="ofisin-main-navbar-item position-relative notifications">
+                                        <i class="fa-solid fa-bell" ></i>
+                                        <!-- dropdown arrow icon -->
+                                        <div class="dropdown-arrow"></div>
+                                        <!-- dropdown box -->
+                                        <div class="main-navbar-dropdown rounded-1 p-2">
+                                            <!-- notification box start-->
+                                            <a class="text-reset text-decoration-none" href="#">
+                                                <div class="notification rounded-2 d-flex p-2">
+                                                    <div class="notification-picture" alt="notification-pic"></div>
+                                                    <div class="ps-2 notification-text text-start">
+                                                        Hasan'dan yeni mesajınız var
+                                                        <br>
+                                                        <i class="fa-solid fa-clock align-middle ps-0 pe-0"></i>
+                                                        <span>5 dk önce</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <!-- notification box end-->
+            
+                                            <!-- Shown when there is no message  START-->
+                                            <!-- <div class="dropdown-empty-inbox d-flex align-items-center p-2" role="alert">
+                                                    <i class="fa-solid fa-exclamation me-2"></i>
+                                                    <div>
+                                                        Henüz bir bildiriminiz gözükmüyor
+                                                    </div>
+                                                </div> -->
+                                            <!-- Shown when there is no message END-->
+                                        </div>
+                                        <!-- notification badge start-->
+                                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">
+                                            99+
+                                        <span class="visually-hidden">new notifications</span>
+                                        <!-- notification badge end-->
+                                    </li>
+                                    <!-- Messeges parent-->
+                                    <li class="ofisin-main-navbar-item position-relative messages">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <div class="dropdown-arrow"></div>
+                                        <div class="main-navbar-dropdown rounded-1 p-2">
+                                            <!-- notification box start -->
+                                            <a class="text-reset text-decoration-none" href="#">
+                                                <div class="notification rounded-2 d-flex p-2">
+                                                    <div class="notification-picture" alt="notification-pic"></div>
+                                                    <div class="ps-2 notification-text text-start">
+                                                        Hasan'dan yeni mesajınız var
+                                                        <br>
+                                                        <i class="fa-solid fa-clock align-middle ps-0 pe-0"></i>
+                                                        <span>5 dk önce</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <!-- notification box end -->
+            
+                                            <!-- Shown when there is no message  START-->
+                                            <!-- <div class="dropdown-empty-inbox d-flex align-items-center p-2" role="alert">
+                                                    <i class="fa-solid fa-exclamation me-2"></i>
+                                                    <div>
+                                                        Henüz bir bildiriminiz gözükmüyor
+                                                    </div>
+                                                </div> -->
+                                            <!-- Shown when there is no message END-->
+                                        </div>
+                                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">
+                                            12
+                                        <span class="visually-hidden">unread messages</span>
+                                        
+                                    </li>
+                                    <!-- Profile setting parent -->
+                                    <li class="ofisin-main-navbar-item position-relative profile-links">
+                                        <div class="ofisin-main-navbar-profile-picture" ></div>
+                                        <div class="dropdown-arrow"></div>
+                                        <div class="main-navbar-dropdown rounded-1 p-2">
+                                            <!-- profile dropdown -->
+                                            <ul class="list-unstyled profile-dropdown d-flex flex-column p-2">
+                                                <li class="p-2 rounded-2"><a href="#">Profile</a></li>
+                                                <li class="p-2 rounded-2"><a href="#">Şikayet et</a></li>
+                                                <li class="p-2 rounded-1"><a  href="#">Logout</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+            
+                            <!-- navbar right side section for users who are (not) logged in -->
+                            <div class="col d-flex justify-content-sm-center ms-2 ms-sm-0">
+                                <ul class="list-unstyled d-flex align-items-center justify-content-center">
+                                    <li class="ofisin-main-navbar-item">
+                                        <a href="signIn.html">
+                                            <button type="button" class="ofisin-navbar-btn1 rounded-3 text-nowrap">giriş yap</button>
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="#">
-                                            <button type="button" class="ofisin-navbar-btn1 rounded-3">giriş yap</button>
-                                        </a>
-                                    </li>
-                                    <li class="d-none d-lg-block">
-                                        <a href="#">
-                                            <button type="button" class="ofisin-navbar-btn2 rounded-3">üye ol</button>
+                                    <li  class="ofisin-main-navbar-item">
+                                        <a href="signUp.html" class="hvr-grow">
+                                            <button type="button" class="ofisin-navbar-btn2 rounded-3 text-nowrap">üye ol</button>
                                         </a>
                                     </li>
                                 </ul>
                             </div>
+            
                         </div>
+                        
                     </div>
-                </div>
+                </nav>
+
                 <!-- header greeting -->
                 <div class="col col-lg-6 ofisin-header-greetings text-center mt-lg-5">
                     <div class="row flex-column header-greeting-box">
@@ -73,9 +182,9 @@
                         </div>
                         <div class="col-12 text-center mt-lg-5">
                             <a href="#">
-                                <button type="button" class="header-greeting-btn rounded-3 ">
+                                <button type="button" class="header-greeting-btn rounded-3">
                                     başla
-                                    <span class="material-symbols-outlined">
+                                    <span class="material-symbols-outlined ">
                                         arrow_forward
                                     </span>
                                 </button>
@@ -83,6 +192,7 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- header vectors -->
                 <div class="col-6 ofisin-header-vectors d-none d-lg-flex">
                     <div class="vectors">
@@ -111,6 +221,7 @@
     </header>
 
     <main>
+        <!-- features Section -->
         <section class="features">
             <div class="container">
                 <div class="row">
@@ -154,6 +265,7 @@
             </div>
         </section>
 
+        <!-- Project Steps Section -->
         <section class="steps m-2 mt-5">
             <div class="container p-5 text-center rounded-4">
                 <h1>üç adımda proje ekle</h1>
@@ -180,6 +292,7 @@
             </div>
         </section>
 
+        <!-- Categories Section -->
         <section class="categories mt-5">
             <div class="container p-5 text-center">
                 <h1>Farklı kategorilerde teklif al</h1>
@@ -333,6 +446,7 @@
             </div>          
         </section>
 
+        <!-- Start Now Section -->
         <section class="startNow m-2 mt-5">
             <div class="container h-100 rounded-3">
                 <div class="row h-100 justify-content-center p-5">
@@ -358,6 +472,7 @@
                 <a href="#">ofısın</a>
             </div>
             <div class="row p-5 justify-content-center">
+                
                 <div class="col-12 col-xl-6">
                     <!-- footer main links  -->
                     <div class="row">
@@ -436,7 +551,9 @@
                             </ul>
                         </div>
                     </div>
+
                 </div>
+
                 <!-- footer right section (reach us section) -->
                 <div class="col-12 col-xl-4 m-0">
                     <div class="row flex-column h-100">
@@ -477,6 +594,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
             <!-- footer bottom section (payment brands) and copyright-->
             <div class="row flex-column footer-brands-box">
