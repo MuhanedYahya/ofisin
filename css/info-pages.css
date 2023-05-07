@@ -1,0 +1,93 @@
+.info-pages-parent{
+    min-height: 700px;
+}
+.info-title-parent{
+    text-transform: capitalize;
+}
+.info-title-parent div p{
+    color: #586174;
+    text-transform: capitalize;
+}
+.info-title-parent div:first-child p{
+    color: var(--green-color);
+    text-transform: uppercase;
+}
+.info-title-parent h5,.info-title-parent span{
+    color: var(--green-color);
+    font-weight: 600;
+}
+.info-parent {
+    background:rgb(236, 239, 244);
+}
+.info-section h6{
+    text-transform: uppercase;
+    padding-bottom: 8px;
+}
+.info-section h6{
+    text-transform: uppercase;
+}
+.info-btn{
+    border: none;
+    text-transform: capitalize;
+    color: var(--grey-second-color);
+    background-color: var(--green-main-color);
+}
+/* asked questions accordion codes START */
+.asked-questions-accordion .accordion-button {
+    background-color: unset;
+    box-shadow: unset ;
+    background-image: none ;
+    color: unset;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: var(--bs-accordion-btn-icon);
+    transform: var(--bs-accordion-btn-icon-transform);
+}
+.info-pages-parent  .collapse {
+    transition-duration: 200ms;
+    background:rgb(236, 239, 244) !important;
+}
+
+  /* asked questions accordion codes END */
+
+  /* reach us page */
+  .reach-us-form .form-control{
+    max-width: 690px;
+    padding: 20px;
+    background-color: unset;
+    border-radius: unset;
+    box-shadow: none;
+    border: none;
+    border-bottom: var(--bs-border-width) solid var(--bs-border-color);
+    min-height: 70px;
+  }
+ 
+  .reach-us-form textarea{
+   min-height: 100px !important;
+   max-height: 200px !important;
+  }
+  .form-control::after {
+    box-shadow: none;
+
+  }
+ .reach-us-btn{
+    border: none;
+    background-color:#03292F;
+    color: var(--grey-second-color);
+    text-transform: capitalize;
+    transition-duration:350ms;
+    transition-timing-function: ease-in-out;
+ }
+
+ .reach-us-btn:hover{
+    transform: scale(.9); 
+ }
+
+  @media (max-width: 990px) {
+    .reach-us-form .form-control{
+        max-width: 100%;
+    }
+     
+  }

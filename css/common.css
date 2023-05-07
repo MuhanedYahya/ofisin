@@ -13,6 +13,7 @@
     --yellow-light-color: #FBEACA;
     --grey-color: #CCCCCC;
     --background-color:#F8F9FD;
+    --green-color:#30BBA9;
     /* fonts */
     --roboto-font:'Roboto', sans-serif;
     --outfit-font:'Outfit', sans-serif;
@@ -21,5 +22,19 @@
 body{
     background-color: var(--background-color);
     font-family: var(--roboto-font);
+    line-height: 1.6;
 }
 
+.ofisin-btn{
+    background: rgb(34,95,95);
+    background: linear-gradient(90deg, rgba(34,95,95,1) 0%, rgba(34,95,95,1) 0%, rgba(34,95,95,1) 50%); 
+    color: white;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    transition-duration:.5s;
+    transition-timing-function: ease-in-out;
+}
+.ofisin-btn:hover{
+    background: linear-gradient(90deg, rgba(34,95,95,1) 0%, rgba(44,121,121,1) 50%, rgba(34,95,95,1) 100%); 
+}

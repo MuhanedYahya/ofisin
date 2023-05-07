@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- bootstrap css files -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <!-- font awesome css files -->
@@ -14,7 +13,8 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/Navbar.css">
-    <link rel="stylesheet" href="./css/signInUp.css">
+    <link rel="stylesheet" href="./css/info-pages.css">
+
     <title>Ofisin</title>
 </head>
 <body>
@@ -166,61 +166,58 @@
     </nav>
 
     <main>
-        <div class="ontainer-fluid login-signup-main">
-            <div class="row justify-content-start p-5 align-items-center">
-                <div class="col-12 mb-5 mb-xl-0 col-lg-7">
-                    <img class="img-fluid header-vector-image" src="/img/main/hello.svg" alt="hello-image">
+        <div class="container-fluid info-pages-parent mt-0 mt-lg-4">
+            <div class="row justify-content-start p-3 p-lg-5">
+                <div class="col-12 col-lg-5 d-flex flex-column align-items-center p-3 info-title-parent mb-2 mb-lg-0">
+                    <div>
+                        <h1>bize ulaşın</h1>
+                        <h5 >say something to start a live chat!</h5>
+                    </div>
+
+                    <img class="img-fluid mt-4" src="./img/main/reach-us.svg" alt="reach-us-pic">
                 </div>
-                <div class="col-12 col-lg-4 login-form-parent">
-                    <p>giriş yap</p>
-                    <h1>hoş geldiniz!</h1>
-                    <form>
-                        <div class="form-group mt-4 ">
-                            <a href="#">
-                                <button class="w-100 social-btn rounded-1 text-center mt-4 p-2">
-                                    <i class="fa-brands fa-google me-2"></i> Google ile giriş yap
-                                </button>
-                            </a>
-                        </div>
 
-                        <div class="form-group mt-4">
-                            <a href="#">
-                                <button class="w-100 social-btn rounded-1 text-center mt-2 p-2">
-                                    <i class="fa-brands fa-facebook-f me-2"></i> facebook ile giriş yap
-                                </button>
-                            </a>
-                        </div>
+                <div class="col-12 col-lg-5 rounded-2 p-3">
 
-                        <div class="form-group mt-4">
-                          <label for="exampleInputEmail1">Email address</label>
-                          <input type="email" class="form-control p-2 " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                          <!-- <i class="fa-solid fa-envelope"></i> -->
-                            <!-- Check the e-mail address on the backend, if it is valid, add "is-valid" if not add "is-invalid" -->
+                    <form class="row reach-us-form justify-content-end">
+                        <div class="form-floating mb-5">
+                            <input id="floatingInput" class="form-control" type="text" name="firstname" title="Adınızı yazınız" placeholder="Adınız">
+                            <label for="floatingInput">Adınız</label>
+                            <!-- Check the firstname on the backend, if it is valid, add "is-valid" class if not add "is-invalid" -->
                             <!-- Check the tel on the backend, if it is valid, add "is-valid" if not add "is-invalid" -->
                             <!-- if in-valid add this div -->
                             <!-- <div class="invalid-feedback">
-                                E-mail geçersiz 
+                                Ad 
                             </div> -->
                         </div>
-                        <div class="form-group mt-3">
-                          <label for="exampleInputPassword1">Password</label>
-                          <input type="password" class="form-control p-2" id="exampleInputPassword1" placeholder="Password">
-                            <!-- Check the password on the backend, if it is valid, add "is-valid" class if not add "is-invalid" -->
-                            <!-- Check the tel on the backend, if it is valid, add "is-valid" if not add "is-invalid" -->
-                            <!-- if in-valid add this div -->
-                            <!-- <div class="invalid-feedback">
-                                şifrenizi geçersiz || şifre yanlış girildi
-                            </div> -->
+                        <div class="form-floating mb-5">
+                            <input type="email" class="form-control" id="floatingInput"  title="E-mailinizi yazınız" placeholder="name@example.com">
+                            <label for="floatingInput">Email Adresiniz</label>
+                                <!-- Check the firstname on the backend, if it is valid, add "is-valid" class if not add "is-invalid" -->
+                                <!-- Check the tel on the backend, if it is valid, add "is-valid" if not add "is-invalid" -->
+                                <!-- if in-valid add this div -->
+                                <!-- <div class="invalid-feedback">
+                                    Ad 
+                                </div> -->
                         </div>
-                        <button type="submit" class="w-100 ofisin-btn rounded-1 text-center mt-4 p-2">
-                            Giriş Yap
+                        <div class="form-floating mb-5">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" title="Mesajınızı yazınız"></textarea>
+                            <label for="floatingTextarea">Mesajınız</label>
+                                <!-- Check the firstname on the backend, if it is valid, add "is-valid" class if not add "is-invalid" -->
+                                <!-- Check the tel on the backend, if it is valid, add "is-valid" if not add "is-invalid" -->
+                                <!-- if in-valid add this div -->
+                                <!-- <div class="invalid-feedback">
+                                    Ad 
+                                </div> -->
+                        </div>
+                        <button type="submit" class="w-25 reach-us-btn rounded-1 text-center mt-4 p-2">
+                            gönder
                         </button>
                     </form>
-                    <p class="mt-3">don't have an account? <a href="#">Üye Ol</a></p>
                 </div>
+
             </div>
         </div>
-
 
     </main>
 
@@ -230,6 +227,7 @@
             <div class="ofisin-logo ms-4">
                 <a href="#">ofısın</a>
             </div>
+            <!-- footer main content -->
             <div class="row p-5 justify-content-center">
                 <div class="col-12 col-xl-6">
                     <!-- footer main links  -->
@@ -316,10 +314,10 @@
                         <!-- twitter & instagram links -->
                         <div class="col m-3 m-lg-0">
                             <h5>
+                                bizi takip edin
                                 <span class="material-symbols-outlined d-block d-md-none" data-bs-toggle="collapse" href="#follow-collapse" role="button" aria-expanded="true" aria-controls="collapseExample">
                                     add
                                 </span>
-                                bizi takip edin
                             </h5>
                             <ul class="list-unstyled footer-followUs-list collapse show" id="follow-collapse">
                                 <li>
@@ -378,7 +376,7 @@
                 <div class="col-12 text-center">
                     <h6>
                         <i class="fa-regular fa-copyright"></i>
-                        copyright 2023 by devs group. all rights reserved
+                         2023 by devs group. all rights reserved
                     </h6>
                 </div>
             </div>
@@ -394,4 +392,5 @@
 <script src="./js/bootstrap.bundle.min.js"></script>
 <!-- fontawesome -->
 <script src="./js/all.min.js"></script>
+<script src="./js/script.js"></script>
 </html>
