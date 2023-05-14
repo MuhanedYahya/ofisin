@@ -1,0 +1,19 @@
+.add-project-parent{
+    box-shadow: 0 10px 20px #0000000f,0 2px 6px #0000000f,0 0 1px #0000000f;
+    background-color: #fff;
+    text-transform: capitalize;
+}
+
+.add-project-parent label{
+    font-size: 1.3rem !important;
+    font-weight: 500;
+}
+
+.add-project-parent textarea{
+    min-height: 150px;
+    max-height: 400px;
+}
+
+.select-skill li{
+    cursor: pointer;
+}

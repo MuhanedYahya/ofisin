@@ -38,3 +38,15 @@ body{
 .ofisin-btn:hover{
     background: linear-gradient(90deg, rgba(34,95,95,1) 0%, rgba(44,121,121,1) 50%, rgba(34,95,95,1) 100%); 
 }
+
+
+
+.ofisin-main-header{
+    min-height: 285px;
+    background: rgb(34,95,95);
+    background: linear-gradient(90deg, rgba(34,95,95,1) 0%, rgba(25,64,64,1) 0%, rgba(1,40,46,1) 50%); 
+}
+.ofisin-main{
+    transform: translateY(-110px);
+    z-index: 1;
+}

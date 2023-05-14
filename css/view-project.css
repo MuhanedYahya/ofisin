@@ -1,4 +1,4 @@
-.ofisin-main-header{
+/* .ofisin-main-header{
     min-height: 285px;
     background: rgb(34,95,95);
     background: linear-gradient(90deg, rgba(34,95,95,1) 0%, rgba(25,64,64,1) 0%, rgba(1,40,46,1) 50%); 
@@ -6,7 +6,7 @@
 .ofisin-main{
     transform: translateY(-110px);
     z-index: 1;
-}
+} */
 /* overwrite navbar START*/
 .ofisin-main-navbar{
     background:transparent;
