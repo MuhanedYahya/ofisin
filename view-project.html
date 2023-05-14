@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- bootstrap css files -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- font awesome css files -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- our styles -->
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/Navbar.css">
+    <link rel="stylesheet" href="./css/project.css">
+
+    <title>Ofisin</title>
+</head>
+<body>
+
+
+
+<header class="ofisin-main-header">
+    <nav>
+        <div class="container-fluid ofisin-main-navbar">
+            <div class="row h-100 align-items-center">
+                <!-- navbar logo -->
+                <div class="col d-flex justify-content-xs-start justify-content-sm-center ms-2 ms-sm-0" >
+                    <div class="ofisin-main-logo">
+                        <a href="index.html">ofısın</a>
+                    </div>
+                </div>
+    
+                <!-- navbar main links -->
+                <div class="col d-none d-lg-flex justify-content-center pages-links-col">
+                    <ul class="list-unstyled d-flex justify-content-center align-items-center">
+                        <li class="ofisin-main-navbar-item ofisin-main-navbar-pages text-nowrap">
+                            <a href="#">
+                                projeler <span class="badge bg-secondary align-top">Yeni</span>
+                            </a>
+                        </li>
+                        <li class="ofisin-main-navbar-item ofisin-main-navbar-pages text-nowrap">
+                            <a href="#">biz kimiz</a>
+                        </li>
+                        <li class="ofisin-main-navbar-item ofisin-main-navbar-pages">
+                            <a href="#">iletişim</a>
+                        </li>
+                        <li class="ofisin-main-navbar-item">
+                            <div class="search-box">
+                                <form action="post">
+                                    <button  class="btn-search" type="submit"><span class="material-symbols-outlined">search</span></button>
+                                    <input type="text" class="input-search" placeholder="Buraya yazınız..">
+                                </form>
+                                </div>
+                        </li>
+                    </ul>
+                </div>
+    
+                <!-- navbar right side section for users who are logged in -->
+                <div class="col d-none justify-content-sm-center ms-2 ms-sm-0">
+                    
+                    <ul class="list-unstyled d-flex align-items-baseline">
+                        <!-- Notifications parent-->
+                        <li class="ofisin-main-navbar-item position-relative notifications">
+                            <i class="fa-solid fa-bell" ></i>
+                            <!-- dropdown arrow icon -->
+                            <div class="dropdown-arrow"></div>
+                            <!-- dropdown box -->
+                            <div class="main-navbar-dropdown rounded-1 p-2">
+                                <!-- notification box start-->
+                                <a class="text-reset text-decoration-none" href="#">
+                                    <div class="notification rounded-2 d-flex p-2">
+                                        <div class="notification-picture" alt="notification-pic"></div>
+                                        <div class="ps-2 notification-text text-start">
+                                            Hasan'dan yeni mesajınız var
+                                            <br>
+                                            <i class="fa-solid fa-clock align-middle ps-0 pe-0"></i>
+                                            <span>5 dk önce</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- notification box end-->
+    
+                                <!-- Shown when there is no message  START-->
+                                <!-- <div class="dropdown-empty-inbox d-flex align-items-center p-2" role="alert">
+                                        <i class="fa-solid fa-exclamation me-2"></i>
+                                        <div>
+                                            Henüz bir bildiriminiz gözükmüyor
+                                        </div>
+                                    </div> -->
+                                <!-- Shown when there is no message END-->
+                            </div>
+                            <!-- notification badge start-->
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">
+                                99+
+                            <span class="visually-hidden">new notifications</span>
+                            <!-- notification badge end-->
+                        </li>
+                        <!-- Messeges parent-->
+                        <li class="ofisin-main-navbar-item position-relative messages">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div class="dropdown-arrow"></div>
+                            <div class="main-navbar-dropdown rounded-1 p-2">
+                                <!-- notification box start -->
+                                <a class="text-reset text-decoration-none" href="#">
+                                    <div class="notification rounded-2 d-flex p-2">
+                                        <div class="notification-picture" alt="notification-pic"></div>
+                                        <div class="ps-2 notification-text text-start">
+                                            Hasan'dan yeni mesajınız var
+                                            <br>
+                                            <i class="fa-solid fa-clock align-middle ps-0 pe-0"></i>
+                                            <span>5 dk önce</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- notification box end -->
+    
+                                <!-- Shown when there is no message  START-->
+                                <!-- <div class="dropdown-empty-inbox d-flex align-items-center p-2" role="alert">
+                                        <i class="fa-solid fa-exclamation me-2"></i>
+                                        <div>
+                                            Henüz bir bildiriminiz gözükmüyor
+                                        </div>
+                                    </div> -->
+                                <!-- Shown when there is no message END-->
+                            </div>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">
+                                12
+                            <span class="visually-hidden">unread messages</span>
+                            
+                        </li>
+                        <!-- Profile setting parent -->
+                        <li class="ofisin-main-navbar-item position-relative profile-links">
+                            <div class="ofisin-main-navbar-profile-picture" ></div>
+                            <div class="dropdown-arrow"></div>
+                            <div class="main-navbar-dropdown rounded-1 p-2">
+                                <!-- profile dropdown -->
+                                <ul class="list-unstyled profile-dropdown d-flex flex-column p-2">
+                                    <li class="p-2 rounded-2"><a href="#">Profile</a></li>
+                                    <li class="p-2 rounded-2"><a href="#">Şikayet et</a></li>
+                                    <li class="p-2 rounded-1"><a  href="#">Logout</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                </div>
+    
+                <!-- navbar right side section for users who are (not) logged in -->
+                <div class="col d-flex justify-content-sm-center ms-2 ms-sm-0">
+                    <ul class="list-unstyled d-flex align-items-center justify-content-center">
+                        <li class="ofisin-main-navbar-item">
+                            <a href="signIn.html">
+                                <button type="button" class="ofisin-navbar-btn1 rounded-3 text-nowrap">giriş yap</button>
+                            </a>
+                        </li>
+                        <li  class="ofisin-main-navbar-item">
+                            <a href="signUp.html" class="hvr-grow">
+                                <button type="button" class="ofisin-navbar-btn2 rounded-3 text-nowrap">üye ol</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+    
+            </div>
+            
+        </div>
+    </nav>
+</header>
+
+
+<main class="container ofisin-main position-relative">
+    <div class="row flex-column align-items-center p-2">
+        <!-- project header -->
+        <div class="col row project-header justify-content-between rounded-2 p-4">
+            <div class="col pe-lg-3">
+                <h1>
+                    Flutter ve laravel projeleri için payment getway eklenecek
+                </h1>
+                <p class="mt-4">
+                    1 saat önce
+                    <span class="rounded-2 p-1 ms-3">yayında</span>
+                 </p>
+
+
+
+
+            </div>
+            <div class="col-12 col-lg-4">
+                <h2>1500 &minus; 2500 &#8378</h2>
+                <p><strong>tekliflerin ortalaması &colon;</strong> 1850 &#8378</p>
+                <p><strong>süre &colon;</strong> 7 gün</p>
+
+                <!-- editleme şeyi iş sahibine çıkar -->
+                <a href="#" class="text-reset text-decoration-none">
+                    <span class="material-symbols-outlined edit-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit project">edit</span>
+                </a>
+
+                <!-- bookmark -->
+                <div class="text-end project-bookmark">
+                    <!-- project unsaved -->
+                    <span  data-bs-toggle="tooltip" data-bs-placement="top" title="save project">
+                        <i class="fa-regular fa-bookmark"></i>
+                        <!-- show this when the project saved -->
+                        <!-- <i class="fa-solid fa-bookmark saved"></i> -->
+                    </span>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col row justify-content-between rounded-2 p-0 mt-4">
+
+            <!-- about the project section -->
+            <div class="col-12 col-lg-8 project-detail rounded-2 p-4 me-0 me-lg-3">
+                <h4>proje açıklaması</h4>
+                <hr>
+                <!-- project text -->
+                <p>
+                    Bir Flutter ön projem var ve Laravel arka ucu İstediğim, ödeme yolunu entegre etmek Şu anda paypal ve stripe sahibim Ve paytabs entegre etmek istiyorum teşekkür ederim
+                </p>
+                <!-- project images if exists-->
+                <div class="project-images-box d-flex align-items-center m-2 ms-0 mb-3">
+                    <img src="/img/main/team.svg" alt="project-image" class="img-thumbnail  project-image m-2">
+                    <img src="/img/main/hello.svg" alt="project-image" class="img-thumbnail project-image m-2">
+                </div>
+
+                <!-- project needed skills -->
+                <div>
+                    <h6>gerekli Yetenekler</h6>
+                    <div class="d-flex align-items-center">
+                        <div class="skill rounded-3 p-1 ps-2 pe-2 me-2">
+                            Laravel
+                        </div>
+                        <div class="skill rounded-3 p-1 ps-2 pe-2 me-2">
+                            Flutter
+                        </div>
+                        <div class="skill rounded-3 p-1 ps-2 pe-2 me-2">
+                            React
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- about customer secion -->
+            <div class="col rounded-2 p-4 customer-detail mt-2 mt-lg-0">
+                <h4>müşteri hakkında</h4>
+                <hr>
+                <div class="d-flex align-items-start">
+                    <a href="#">
+                        <div class="user-pic me-2" title="view profile"></div>
+                    </a>
+                    <div>
+                        <h6> <a href="#" class="text-reset">muhaned yahya</a> </h6>
+                        <p class="mb-0">avukat</p>
+                        
+                        <div class="rating d-flex flex-row-reverse align-items-center">
+                            <!-- Add "checked" to the input tag until its evaluation -->
+                            <span class="number-of-reviews ms-2">
+                                &#40; 35 &#41;
+                            </span>
+                            <input type="radio" id="star1" name="rate" value="1">
+                            <label for="star1" title="rate"></label>
+                            <input type="radio" id="star2" name="rate" value="2">
+                            <label for="star2" title="rate"></label>
+                            <input type="radio" id="star3" name="rate" value="3">
+                            <label for="star3" title="rate"></label>
+                            <input type="radio" id="star4" name="rate" value="4">
+                            <label for="star4" title="rate"></label>
+                            <input type="radio" id="star5" name="rate" value="5">
+                            <label for="star5" title="text"></label> 
+                        </div>
+                        <p>
+                            <span class="material-symbols-outlined">location_on</span>
+                            istanbul
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- customer verified info  -->
+                <div class="d-flex align-items-center justify-content-end verified-icons">
+                    <!-- add verified class to "i" tag if the info is verified -->
+                    <span  data-bs-toggle="tooltip" data-bs-placement="top" title="profile verified">
+                        <i class="fa-solid fa-user verified"></i>
+                    </span>
+                    <span  data-bs-toggle="tooltip" data-bs-placement="top" title="payment verified">
+                        <i class="fa-solid fa-money-check verified"></i>
+                    </span>
+                    <span  data-bs-toggle="tooltip" data-bs-placement="top" title="phone not verified">
+                        <i class="fa-solid fa-phone"></i>
+                    </span>
+                    <span  data-bs-toggle="tooltip" data-bs-placement="top" title="email not verified">
+                        <i class="fa-solid fa-envelope"></i>
+                    </span>
+                </div>
+
+                <button type="button" class="w-100 btn btn-outline-danger mt-3 p-2">yayından kaldır</button>
+
+            </div>
+
+        </div>
+
+        <!-- add / show offers section -->
+        <div class="col row justify-content-between rounded-2 p-0 mt-2">
+
+            <!-- add offer for freelancers -->
+            <!-- <div class="col col-lg-8 add-offer-parent rounded-2 p-4 me-0 me-lg-3">
+                <h4>teklifinizi ekleyin</h4>
+                <hr>
+                <form class="add-offer-box mt-4">
+                    <div class="input-group input-group-lg">
+                        <input type="text" class="form-control fs-6" title="Teslimat Süresi" placeholder="Teslimat Süresi">
+                    </div>
+                    <div class="input-group input-group-lg mt-4 mb-4">
+                        <input type="text" class="form-control fs-6"  title="Teklif Değeri" placeholder="Teklif Değeri">
+                    </div>
+                    <div class="input-group">
+                        <textarea class="form-control fs-6" title="Teklif detayları" placeholder="Teklif detayları"></textarea>
+                    </div>
+                    <button type="submit" class="w-100 ofisin-btn rounded-1 text-center mt-4 p-2">
+                        ekle
+                    </button>
+                </form>
+            </div> -->
+
+
+            <!-- offers for project manager -->
+            <div class="col col-lg-8 add-offer-parent rounded-2 p-4 me-0 me-lg-3">
+
+                <!-- offers title -->
+                <div class="d-flex justify-content-between align-items-center">
+                    <h4 class="d-inline-flex">teklifler</h4>
+                    <button class="d-flex justify-content-center align-items-center list-offers-btn p-1 pe-3 rounded-1">
+                        <span class="material-symbols-outlined me-1">sort</span>
+                        sırala
+                    </button>
+                </div>
+                <hr>
+
+                <!-- teklif bulunmuyorsa bunu göster -->
+
+                <!-- <div class="alert alert-warning p-4" role="alert">
+                    Henüz bir teklfiniz bulunmuyor
+                </div> -->
+
+
+
+                <!-- offer box -->
+                <div class="offer">
+                    <div class="d-flex align-items-start">
+                        <!-- user profile pic -->
+                        <a href="#">
+                            <div class="user-pic me-2" title="view profile"></div>
+                        </a>
+                        <!-- user info & user rating-->
+                        <div>
+                            <h6> <a href="#" class="text-reset">muhaned yahya</a> </h6>
+                            <div class="d-flex align-items-center ">
+                                <p class="mb-0 me-2">avukat</p>
+                            
+                                <div class="rating d-inline-flex flex-row-reverse">
+                                    <!-- Add "checked" to the input tag until its evaluation -->
+                                    <input type="radio" id="star1" name="rate" value="1">
+                                    <label for="star1" title="rate"></label>
+                                    <input type="radio" id="star2" name="rate" value="2">
+                                    <label for="star2" title="rate"></label>
+                                    <input type="radio" id="star3" name="rate" value="3">
+                                    <label for="star3" title="rate"></label>
+                                    <input type="radio" id="star4" name="rate" value="4">
+                                    <label for="star4" title="rate"></label>
+                                    <input type="radio" id="star5" name="rate" value="5">
+                                    <label for="star5" title="text"></label> 
+                                </div>
+                                
+                                <span class="number-of-reviews ms-2">
+                                    &#40; 35 &#41;
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- user offer text -->
+                    <div class="p-2 pb-0 pt-3">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, porro accusamus. Quasi illo vero deserunt, cumque nihil libero in iusto explicabo eveniet. Iusto laboriosam magnam unde? Error commodi ducimus nesciunt!</p>
+                    </div>
+                    <!-- offer images if exists-->
+                    <div class="offer-images-box d-flex align-items-center m-2 ms-0 mb-3">
+                        <img src="/img/main/team.svg" alt="offer-image" class="img-thumbnail  offer-image m-2">
+                        <img src="/img/main/hello.svg" alt="offer-image" class="img-thumbnail offer-image m-2">
+                    </div>
+
+                    <!-- contact btn -->
+                    <div class="d-flex justify-content-end">
+                        <button type="submit" class="w-25 ofisin-btn rounded-1 text-nowrap text-center p-2">
+                            iletişime geç
+                        </button>
+                    </div>
+                    <hr>
+                    
+                </div>
+
+
+            </div>
+
+            
+        </div>
+
+    </div>
+
+
+</main>
+
+
+
+<footer>
+    <div class="container-fluid ofisin-footer p-4 mt-5">
+        <!-- ofisin logo -->
+        <div class="ofisin-logo ms-4">
+            <a href="#">ofısın</a>
+        </div>
+        <!-- footer main content -->
+        <div class="row p-5 justify-content-center">
+            <div class="col-12 col-xl-6">
+                <!-- footer main links  -->
+                <div class="row">
+                    <div class="col-12 col-md-4 m-3 m-lg-0">
+                        <h5 class>
+                            hakkında
+                            <span class="material-symbols-outlined d-block d-md-none" data-bs-toggle="collapse" href="#aboutUs-collapse" role="button" aria-expanded="true" aria-controls="collapseExample">
+                                add
+                            </span>
+                        </h5>
+                        <ul class="list-unstyled collapse show" id="aboutUs-collapse">
+                            <li>
+                                <a href="#">biz kimiz</a>
+                            </li>
+                            <li>
+                                <a href="#">iletişim</a>
+                            </li>
+                            <li>
+                                <a href="#">yaygın sorular</a>
+                            </li>
+                            <li>
+                                <a href="#">kullanım şartları</a>
+                            </li>
+                            <li>
+                                <a href="#">gizlilik bildirimi</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-4 m-3 m-lg-0">
+                        <h5>
+                            projeler
+                            <span class="material-symbols-outlined d-block d-md-none" data-bs-toggle="collapse" href="#projects-collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                add
+                            </span>
+                        </h5>
+                        <ul class="list-unstyled collapse show" id="projects-collapse">
+                            <li>
+                                <a href="#">proje ekle</a>
+                            </li>
+                            <li>
+                                <a href="#">son projeler</a>
+                            </li>
+                            <li>
+                                <a href="#">web geliştirme</a>
+                            </li>
+                            <li>
+                                <a href="#">mobil uygulama</a>
+                            </li>
+                            <li>
+                                <a href="#">tasarım</a>
+                            </li>
+                            <li>
+                                <a href="#">yönetim & iletişim</a>
+                            </li>
+                            <li>
+                                <a href="#">kategoriler</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-4 m-3 m-lg-0">
+                        <h5>
+                            linkler
+                            <span class="material-symbols-outlined d-block d-md-none" data-bs-toggle="collapse" href="#links-collapse" role="button" aria-expanded="true" aria-controls="collapseExample">
+                                add
+                            </span>
+                        </h5>
+                        <ul class="list-unstyled collapse show" id="links-collapse">
+                            <li>
+                                <a href="#">ofisin kurumsal</a>
+                            </li>
+                            <li>
+                                <a href="#">iş fuarı</a>
+                            </li>
+                            <li>
+                                <a href="#">yardım merkezi</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- footer right section (reach us section) -->
+            <div class="col-12 col-xl-4 m-0">
+                <div class="row flex-column h-100">
+                    <!-- twitter & instagram links -->
+                    <div class="col m-3 m-lg-0">
+                        <h5>
+                            bizi takip edin
+                            <span class="material-symbols-outlined d-block d-md-none" data-bs-toggle="collapse" href="#follow-collapse" role="button" aria-expanded="true" aria-controls="collapseExample">
+                                add
+                            </span>
+                        </h5>
+                        <ul class="list-unstyled footer-followUs-list collapse show" id="follow-collapse">
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- send button section -->
+                    <div class="col m-3 m-lg-0">
+                        <h5>
+                            hızlı iletişim
+                            <span class="material-symbols-outlined d-block d-md-none" data-bs-toggle="collapse" href="#contact-collapse" role="button" aria-expanded="true" aria-controls="collapseExample">
+                                add
+                            </span>
+                        </h5>
+                        <a href="#" class="collapse show" id="contact-collapse">
+                            <div class="footer-reachUs-box rounded-5 d-flex align-items-center ps-4 mt-4">
+                                bize ulaşın
+                                </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer bottom section (payment brands) and copyright-->
+        <div class="row flex-column footer-brands-box">
+            <div class="col-12">
+                <ul class="list-unstyled footer-brands-list d-flex justify-content-center">
+                    <li>
+                        <i class="fa-brands fa-paypal"></i>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-apple-pay"></i>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-cc-visa"></i>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-google-pay"></i>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-cc-mastercard"></i>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-cc-paypal"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 text-center">
+                <h6>
+                    <i class="fa-regular fa-copyright"></i>
+                        2023 by devs group. all rights reserved
+                </h6>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+    
+</body>
+<!-- jquery -->
+<script src="./js/jquery.min.js"></script>
+<!-- bootstrap -->
+<script src="./js/bootstrap.bundle.min.js"></script>
+<!-- fontawesome -->
+<script src="./js/all.min.js"></script>
+<script src="./js/script.js"></script>
+</html>
