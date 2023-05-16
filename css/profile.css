@@ -1,10 +1,15 @@
 .profile-main > div,
-.profile-section{
+.profile-section > div{
     box-shadow: 0 10px 20px #0000000f,0 2px 6px #0000000f,0 0 1px #0000000f;
     background-color: #fff;
     text-transform: capitalize;
     overflow: hidden;
 }
+.profile-section > div h4{
+    color: #01282E;
+    opacity: 80%;
+}
+
 .profile-cover{
     height: 200px;
     width: 100%;
@@ -31,10 +36,11 @@
 }
 .work-section{
     color: #181818;
+    border-bottom: 1px solid var(--grey-main-color);
 }
 .work-pic{
-    height: 85px;
-    min-width: 85px;
+    height: 70px;
+    min-width: 70px;
     background: black;
     background: url(../img/cover.jpg);
     background-position: center;
@@ -84,4 +90,88 @@
 .review-box span:last-child{
     font-weight: 200;
     cursor: pointer;
+}
+.profile-info h2 a{
+    text-decoration: none;
+}
+.profile-info h2 a:hover{
+    text-decoration: underline;
+}
+
+.profile-main h5:hover{
+    cursor: pointer;
+}
+.project-box .review-box span{
+    font-weight: 500;
+}
+
+/* project box overwrite start*/
+.project-box .rating{
+    margin-bottom: 3px;
+}
+.project-box .rating:not(:checked) > label:before {
+  font-size: 20px; 
+}
+.project-box p{
+    display: block !important;
+    -webkit-line-clamp: unset;
+    -webkit-box-orient: unset;
+    text-overflow: unset;
+}
+/* project box overwrite end*/
+
+/* profile right section */
+.profile-section{
+    cursor: pointer;
+}
+.profile-section-list li{
+    font-size: 1.1rem;
+    color: rgba(89, 88, 103, 1);
+}
+
+.profile-section-list li span,
+.profile-section-list img{
+    margin-right: 5px;
+}
+.profile-section-list li:nth-child(1) span:last-child{
+    color: #4000FE;
+    font-weight: 400;
+}
+.profile-section-list li:nth-child(2) span{
+    vertical-align: middle;
+}
+.profile-section-list li:nth-child(2) span,
+.profile-section-list li:nth-child(3) span{
+    color: #FF3100;
+}
+
+.green-number{
+    color: #20A482;
+    font-weight: 400;
+}
+
+.profile-skills-list li{
+    font-size: 1.1rem;
+    color: rgba(89, 88, 103, 1);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.profile-action{
+    border-bottom: 1px solid var(--grey-main-color);
+}
+.profile-action p a{
+    text-decoration: none;
+}
+.profile-action p a:hover{
+    text-decoration: underline;
+}
+.profile-info .ofisin-btn,
+.profile-info .ofisin-btn2{
+    width: 25%;
+}
+@media (max-width: 992px) {
+    .profile-info .ofisin-btn,
+    .profile-info .ofisin-btn2{
+        width: 50%;
+    }
 }

@@ -49,69 +49,11 @@
 
 
 /* project box START */
-.project-box h5,
-.project-box .project-budget{
-    font-size: 1.5rem;
-    color: var(--purple-color);
-    opacity: 80%;
-}
-
-.project-box h5{
-    /* texy ellipsis after 2 line*/
-    display: -webkit-box !important;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-.project-box h5 a{
-   text-decoration: none;
-}
-.project-box h5 a:hover{
-    text-decoration: underline;
- }
-
-.project-manager-info span{
-    font-size: 1rem;
-}
 
 .project-box .rating{
     margin-bottom: -9px;
 }
 .project-box .rating:not(:checked) > label:before {
   font-size: 12px; 
-}
-
-.project-manager-info svg,.project-manager-info span{
-    color: var(--purple-color);
-    opacity: 60%;
-}
-
-.project-box p{
-    color: var(--purple-color);
-    opacity: 70%;
-    /* texy ellipsis after 2 line*/
-    display: -webkit-box !important;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-.project-box ul li{
-    float: left;
-    color: #087466;
-    font-weight: 500;
-    cursor: pointer;
-}
-.project-box ul li:hover{
-    color: var(--green-color);
-}
-
-.project-box-bottom {
-    font-size: .8rem;
-}
-
-.project-box {
-    border-bottom: 1px solid var(--grey-main-color);
 }
 /* project box END */

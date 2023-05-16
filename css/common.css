@@ -26,6 +26,7 @@ body{
     line-height: 1.6;
 }
 
+/* ofisin button start*/
 .ofisin-btn{
     background: rgb(34,95,95);
     background: linear-gradient(90deg, rgba(34,95,95,1) 0%, rgba(34,95,95,1) 0%, rgba(34,95,95,1) 50%); 
@@ -39,7 +40,6 @@ body{
 .ofisin-btn:hover{
     background: linear-gradient(90deg, rgba(34,95,95,1) 0%, rgba(44,121,121,1) 50%, rgba(34,95,95,1) 100%); 
 }
-
 .ofisin-btn2{
     background-color: white;
     color: var(--green-dark-color);
@@ -49,10 +49,9 @@ body{
     text-transform: capitalize;
 
 }
+/* ofisin button end*/
 
-
-
-
+/* ofisin main header start*/
 .ofisin-main-header{
     min-height: 285px;
     background: rgb(34,95,95);
@@ -63,14 +62,13 @@ body{
     transform: translateY(-120px);
     z-index: 1;
 }
-
+/* ofisin main header end*/
 
 /* rating START*/
 .rating:not(:checked) > input {
     position: absolute;
     appearance: none;
 }
-    
 .rating:not(:checked) > label {
     cursor: pointer;
     font-size: 25px;
@@ -79,7 +77,6 @@ body{
     opacity: 35%;
     transition-duration: 250ms;
 }
-    
 .rating:not(:checked) > label:before {
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;  
@@ -94,27 +91,27 @@ body{
 .rating > label:hover ~ input:checked ~ label {
     color: #e58e09;
     opacity: 100%;
-}
-    
+}  
 .rating:not(:checked) > label:hover,
 .rating:not(:checked) > label:hover ~ label {
     color: #ff9e0b;
     opacity: 100%;
 }
-    
 .rating > input:checked ~ label {
     color: #ffa723;
     opacity: 100%;
 }
 /* rating END*/
 
+
+
+/* list btn start*/
 .list-btn{
     border: 1px solid #B9B9B9;
     cursor: pointer;
     background: transparent;
     transition-duration: 250ms;
 }
-
 .list-btn  span{
     font-weight: 200;
     color: #2F2E41;
@@ -122,8 +119,10 @@ body{
  .list-btn:hover{
     color: var(--green-color);
 }
+/* list btn end*/
 
- .project-bookmark {
+/* bookmark start*/
+.project-bookmark {
     cursor: pointer;
  }
  .project-bookmark svg:hover{
@@ -132,3 +131,65 @@ body{
 .project-bookmark .saved{
     color:var( --yellow-dark-color) ;
 }
+/* bookmark end*/
+
+
+/* project box START */
+.project-box h5,
+.project-box .project-budget{
+    font-size: 1.5rem;
+    color: var(--purple-color);
+    opacity: 80%;
+}
+
+.project-box h5{
+    /* texy ellipsis after 2 line*/
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.project-box h5 a{
+   text-decoration: none;
+}
+.project-box h5 a:hover{
+    text-decoration: underline;
+ }
+
+.project-manager-info span{
+    font-size: 1rem;
+}
+
+.project-manager-info svg,.project-manager-info span{
+    color: var(--purple-color);
+    opacity: 60%;
+}
+
+.project-box p{
+    color: var(--purple-color);
+    opacity: 70%;
+    /* texy ellipsis after 2 line*/
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.project-box ul li{
+    float: left;
+    color: #087466;
+    font-weight: 500;
+    cursor: pointer;
+}
+.project-box ul li:hover{
+    color: var(--green-color);
+}
+
+.project-box-bottom {
+    font-size: .8rem;
+}
+.project-box {
+    border-bottom: 1px solid var(--grey-main-color);
+}
+/* project box END */
