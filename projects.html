@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/Navbar.css">
-    <link rel="stylesheet" href="./css/view-project.css">
+    <link rel="stylesheet" href="./css/projects.css">
 
     <title>Ofisin</title>
 </head>
@@ -171,95 +171,108 @@
 
 
 <main class="container ofisin-main position-relative">
-    <div class="row flex-column align-items-center p-2">
-        <!-- project header -->
-        <div class="col row project-header justify-content-between rounded-2 p-4">
-            <div class="col pe-lg-3">
-                <h1>
-                    Flutter ve laravel projeleri için payment getway eklenecek
-                </h1>
-                <p class="mt-4">
-                    1 saat önce
-                    <span class="rounded-2 p-1 ms-3">yayında</span>
-                 </p>
 
 
-
-
-            </div>
-            <div class="col-12 col-lg-4">
-                <h2>1500 &minus; 2500 &#8378;</h2>
-                <p><strong>tekliflerin ortalaması &colon;</strong> 1850 &#8378</p>
-                <p><strong>süre &colon;</strong> 7 gün</p>
-
-                <!-- editleme şeyi iş sahibine çıkar -->
-                <a href="#" class="text-reset text-decoration-none">
-                    <span class="material-symbols-outlined edit-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit project">edit</span>
-                </a>
-
-                <!-- bookmark -->
-                <div class="text-end project-bookmark">
-                    <!-- project unsaved -->
-                    <span  data-bs-toggle="tooltip" data-bs-placement="top" title="save project">
-                        <i class="fa-regular fa-bookmark"></i>
-                        <!-- show this when the project saved -->
-                        <!-- <i class="fa-solid fa-bookmark saved"></i> -->
-                    </span>
-                </div>
-
-            </div>
+    <div class="row align-items-start">
+        <div class="col-12 input-group input-group-lg projects-search-bar">
+            <button type="submit" class="btn"><i class="fa fa-search"></i></button>
+            <input type="search" placeholder="Proje ara" class="form-control form-control-lg">
         </div>
 
-        <div class="col row justify-content-between rounded-2 p-0 mt-4">
+        <div class="projects-parent row align-items-start p-4">
 
-            <!-- about the project section -->
-            <div class="col-12 col-lg-8 project-detail rounded-2 p-4 me-0 me-lg-3">
-                <h4>proje açıklaması</h4>
-                <hr>
-                <!-- project text -->
-                <p>
-                    Bir Flutter ön projem var ve Laravel arka ucu İstediğim, ödeme yolunu entegre etmek Şu anda paypal ve stripe sahibim Ve paytabs entegre etmek istiyorum teşekkür ederim
-                </p>
-                <!-- project images if exists-->
-                <div class="project-images-box d-flex align-items-center m-2 ms-0 mb-3">
-                    <img src="/img/main/team.svg" alt="project-image" class="img-thumbnail  project-image m-2">
-                    <img src="/img/main/hello.svg" alt="project-image" class="img-thumbnail project-image m-2">
-                </div>
-
-                <!-- project needed skills -->
+            <!-- filters -->
+            <div class="col-12 col-lg-3 filters p-4 rounded-2 me-lg-3 mb-3 mb-lg-0">
                 <div>
-                    <h6>gerekli Yetenekler</h6>
-                    <div class="d-flex align-items-center">
-                        <div class="skill rounded-3 p-1 ps-2 pe-2 me-2">
-                            Laravel
+                    <!-- filtreler title -->
+                    <h4>filtreler</h4>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <h6 class="d-inline">beceriler</h6>
+                        <span class="clear">clear</span>
+                    </div>
+    
+                    <!-- skill search bar -->
+                    <div class="col-12 input-group skill-search-bar mt-2">
+                        <button type="submit" class="btn "><i class="fa fa-search"></i></button>
+                        <input type="search" placeholder="Ara" class="form-control">
+                    </div>
+    
+    
+                    <!-- skill Checks -->
+                    <div class="mt-3 p-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                            <label class="form-check-label" for="flexCheckDefault1">
+                              html
+                            </label>
                         </div>
-                        <div class="skill rounded-3 p-1 ps-2 pe-2 me-2">
-                            Flutter
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2" checked>
+                            <label class="form-check-label" for="flexCheckChecked2">
+                             flutter
+                            </label>
                         </div>
-                        <div class="skill rounded-3 p-1 ps-2 pe-2 me-2">
-                            React
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked3" checked>
+                            <label class="form-check-label" for="flexCheckChecked3">
+                             Laravel
+                            </label>
                         </div>
                     </div>
                 </div>
+
+                <div>
+                    <div class="d-flex justify-content-between mt-3">
+                        <h6 class="d-inline">fiyat</h6>
+                        <span class="clear">clear</span>
+                    </div>
+                    <input class="form-control mt-2 mb-2" type="text" placeholder="Min" title="Minimum fiyat aralığı">
+                    <input class="form-control" type="text" placeholder="Maz" title="Maximum fiyat aralığı">
+
+                </div>
+
+
+
             </div>
-            
-            <!-- about customer secion -->
-            <div class="col rounded-2 p-4 customer-detail mt-2 mt-lg-0">
-                <h4>müşteri hakkında</h4>
+
+            <!-- projects -->
+            <div class="col projects p-4 rounded-2">
+                
+                <div class="d-flex justify-content-between align-items-center">
+                    <h4 class="d-inline-flex">son eklenen projeler</h4>
+                    <button class="d-flex justify-content-center align-items-center list-btn p-1 pe-3 rounded-1">
+                        <span class="material-symbols-outlined me-1">sort</span>
+                        sırala
+                    </button>
+                </div>
                 <hr>
-                <div class="d-flex align-items-start">
-                    <a href="#">
-                        <div class="user-pic me-2" title="view profile"></div>
-                    </a>
-                    <div>
-                        <h6> <a href="#" class="text-reset">muhaned yahya</a> </h6>
-                        <p class="mb-0">avukat</p>
-                        
-                        <div class="rating d-flex flex-row-reverse align-items-center">
+
+                <!-- project box start!!-->
+                
+                <div class="project-box mt-2 p-2 pb-4">
+                    <!-- project title -->
+                    
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-12 col-lg-9">
+                            <h5 class="d-inline-flex">
+                                <a href="#" class="text-reset">
+                                    E-Commerce Product Entry on Site
+                                </a> 
+                            </h5>
+                        </div>
+                        <div class="col-12 col-lg-3 text-lg-end">
+                            <span class="me-1 project-budget">1500 &minus; 1800 &#8378; </span>
+                        </div>
+                    </div>
+                    <!-- project manager info -->
+                    <div class="d-flex align-items-center project-manager-info ">
+                        <i class="fa-solid fa-briefcase"></i>
+
+                        <span class="me-2 ms-2">enes hamed</span>
+
+                        <div class="rating d-inline-flex flex-row-reverse">
                             <!-- Add "checked" to the input tag until its evaluation -->
-                            <span class="number-of-reviews ms-2">
-                                &#40; 35 &#41;
-                            </span>
                             <input type="radio" id="star1" name="rate" value="1">
                             <label for="star1" title="rate"></label>
                             <input type="radio" id="star2" name="rate" value="2">
@@ -271,146 +284,49 @@
                             <input type="radio" id="star5" name="rate" value="5">
                             <label for="star5" title="text"></label> 
                         </div>
-                        <p>
-                            <span class="material-symbols-outlined">location_on</span>
-                            istanbul
+                    </div>
+
+                    <div class="project-box-text">
+                        <p class="mt-2">
+                            <a href="#" class="text-reset text-decoration-none">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, perferendis ullam ipsa repellat autem architecto, tenetur quos ea totam nisi sit quo ratione quam recusandae maxime minus pariatur quia! Id.
+                            </a>
                         </p>
-
-                    </div>
-                </div>
-
-                <!-- customer verified info  -->
-                <div class="d-flex align-items-center justify-content-end verified-icons">
-                    <!-- add verified class to "i" tag if the info is verified -->
-                    <span  data-bs-toggle="tooltip" data-bs-placement="top" title="profile verified">
-                        <i class="fa-solid fa-user verified"></i>
-                    </span>
-                    <span  data-bs-toggle="tooltip" data-bs-placement="top" title="payment verified">
-                        <i class="fa-solid fa-money-check verified"></i>
-                    </span>
-                    <span  data-bs-toggle="tooltip" data-bs-placement="top" title="phone not verified">
-                        <i class="fa-solid fa-phone"></i>
-                    </span>
-                    <span  data-bs-toggle="tooltip" data-bs-placement="top" title="email not verified">
-                        <i class="fa-solid fa-envelope"></i>
-                    </span>
-                </div>
-
-                <button type="button" class="w-100 btn btn-outline-danger mt-3 p-2">yayından kaldır</button>
-
-            </div>
-
-        </div>
-
-        <!-- add / show offers section -->
-        <div class="col row justify-content-between rounded-2 p-0 mt-2">
-
-            <!-- add offer for freelancers -->
-            <!-- <div class="col col-lg-8 add-offer-parent rounded-2 p-4 me-0 me-lg-3">
-                <h4>teklifinizi ekleyin</h4>
-                <hr>
-                <form class="add-offer-box mt-4">
-                    <div class="input-group input-group-lg">
-                        <input type="text" class="form-control fs-6" title="Teslimat Süresi" placeholder="Teslimat Süresi">
-                    </div>
-                    <div class="input-group input-group-lg mt-4 mb-4">
-                        <input type="text" class="form-control fs-6"  title="Teklif Değeri" placeholder="Teklif Değeri">
-                    </div>
-                    <div class="input-group">
-                        <textarea class="form-control fs-6" title="Teklif detayları" placeholder="Teklif detayları"></textarea>
                     </div>
 
-                    <div class="mt-4">
-                        <input class="form-control" type="file" id="formFileMultiple" multiple>
+                    <div class="row">
+                        <ul class="list-unstyled">
+                            <li class="me-3 ">html</li>
+                            <li class="me-3 ">css</li>
+                            <li class="me-3 ">react</li>
+                        </ul>
                     </div>
 
-                    <button type="submit" class="w-100 ofisin-btn rounded-1 text-center mt-4 p-2">
-                        ekle
-                    </button>
-
-                </form>
-            </div> -->
-
-
-            <!-- offers for project manager -->
-            <div class="col col-lg-8 add-offer-parent rounded-2 p-4 me-0 me-lg-3">
-
-                <!-- offers title -->
-                <div class="d-flex justify-content-between align-items-center">
-                    <h4 class="d-inline-flex">teklifler</h4>
-                    <button class="d-flex justify-content-center align-items-center list-btn p-1 pe-3 rounded-1">
-                        <span class="material-symbols-outlined me-1">sort</span>
-                        sırala
-                    </button>
-                </div>
-                <hr>
-
-                <!-- teklif bulunmuyorsa bunu göster -->
-
-                <!-- <div class="alert alert-warning p-4" role="alert">
-                    Henüz bir teklfiniz bulunmuyor
-                </div> -->
-
-
-
-                <!-- offer box -->
-                <div class="offer">
-                    <div class="d-flex align-items-start">
-                        <!-- user profile pic -->
-                        <a href="#">
-                            <div class="user-pic me-2" title="view profile"></div>
-                        </a>
-                        <!-- user info & user rating-->
-                        <div>
-                            <h6> <a href="#" class="text-reset">muhaned yahya</a> </h6>
-                            <div class="d-flex align-items-center ">
-                                <p class="mb-0 me-2">avukat</p>
-                            
-                                <div class="rating d-inline-flex flex-row-reverse">
-                                    <!-- Add "checked" to the input tag until its evaluation -->
-                                    <input type="radio" id="star1" name="rate" value="1">
-                                    <label for="star1" title="rate"></label>
-                                    <input type="radio" id="star2" name="rate" value="2">
-                                    <label for="star2" title="rate"></label>
-                                    <input type="radio" id="star3" name="rate" value="3">
-                                    <label for="star3" title="rate"></label>
-                                    <input type="radio" id="star4" name="rate" value="4">
-                                    <label for="star4" title="rate"></label>
-                                    <input type="radio" id="star5" name="rate" value="5">
-                                    <label for="star5" title="text"></label> 
-                                </div>
-                                
-                                <span class="number-of-reviews ms-2">
-                                    &#40; 35 &#41;
-                                </span>
-                            </div>
+                    <div class="d-flex justify-content-end project-box-bottom">
+                        <span class="me-3">
+                            <i class="fa-solid fa-clock"></i> 
+                            1 dk önce
+                        </span>
+                        <!-- bookmark -->
+                        <div class="text-end project-bookmark">
+                            <!-- project unsaved -->
+                            <span  data-bs-toggle="tooltip" data-bs-placement="top" title="save project">
+                                <i class="fa-regular fa-bookmark"></i>
+                                <!-- show this when the project saved -->
+                                <!-- <i class="fa-solid fa-bookmark saved"></i> -->
+                            </span>
                         </div>
-
-                    </div>
-                    <!-- user offer text -->
-                    <div class="p-2 pb-0 pt-3">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, porro accusamus. Quasi illo vero deserunt, cumque nihil libero in iusto explicabo eveniet. Iusto laboriosam magnam unde? Error commodi ducimus nesciunt!</p>
-                    </div>
-                    <!-- offer images if exists-->
-                    <div class="offer-images-box d-flex align-items-center m-2 ms-0 mb-3">
-                        <img src="/img/main/team.svg" alt="offer-image" class="img-thumbnail  offer-image m-2">
-                        <img src="/img/main/hello.svg" alt="offer-image" class="img-thumbnail offer-image m-2">
+                        
                     </div>
 
-                    <!-- contact btn -->
-                    <div class="d-flex justify-content-end">
-                        <button type="submit" class="w-25 ofisin-btn rounded-1 text-nowrap text-center p-2">
-                            iletişime geç
-                        </button>
-                    </div>
-                    <hr>
-                    
                 </div>
+                
+                <!-- project box end!!-->
+                
+
 
 
             </div>
-
-            
         </div>
 
     </div>

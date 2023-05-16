@@ -192,7 +192,7 @@ header .ofisin-header .ofisin-header-vectors .vector:nth-child(6){
     box-shadow:0 0px 20px 0 var(--green-main-color);
 }
 .steps .container .row .step-box h4{
-    color: #2F2E41;
+    color: var(--purple-color);
     position: relative;
 }
 .steps .container .row .step-box h4::before{
@@ -216,7 +216,7 @@ header .ofisin-header .ofisin-header-vectors .vector:nth-child(6){
 .steps .container .row .step-box p{
     position: relative;
     padding: 15px 15px 15px 0px;
-    color: #2F2E41;
+    color: var(--purple-color);
 }
 .steps .container .row .step-box .steps-paragraph::before{
     content: "";
@@ -233,7 +233,7 @@ header .ofisin-header .ofisin-header-vectors .vector:nth-child(6){
 
 /* categories start ****************************************/
 .categories .container h1{
-    color: #2F2E41;
+    color: var(--purple-color);
     opacity: 40%;
     text-transform: capitalize;
     font-weight: normal;

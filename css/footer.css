@@ -47,7 +47,7 @@ footer .ofisin-footer .footer-brands-box::before{
     width: 80%;
     left: 10%;
     top: 0;
-    background-color:#D9D9D9;
+    background-color:var(--grey-main-color);
     border-radius: 20px;
     opacity: 50%;
 }
@@ -98,7 +98,7 @@ footer .ofisin-footer .footer-reachUs-box::after{
     position: absolute;
     height: 100%;
     border-radius: 20px;
-    background-color: #D9D9D9;
+    background-color: var(--grey-main-color);
     z-index: 2;
     width: 80px;
     top: 0;

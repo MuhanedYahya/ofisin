@@ -14,6 +14,7 @@
     --grey-color: #CCCCCC;
     --background-color:#F8F9FD;
     --green-color:#30BBA9;
+    --purple-color:#2F2E41;
     /* fonts */
     --roboto-font:'Roboto', sans-serif;
     --outfit-font:'Outfit', sans-serif;
@@ -39,6 +40,17 @@ body{
     background: linear-gradient(90deg, rgba(34,95,95,1) 0%, rgba(44,121,121,1) 50%, rgba(34,95,95,1) 100%); 
 }
 
+.ofisin-btn2{
+    background-color: white;
+    color: var(--green-dark-color);
+    outline: none;
+    font-weight: 400;
+    border: 1px solid var(--green-dark-color);
+    text-transform: capitalize;
+
+}
+
+
 
 
 .ofisin-main-header{
@@ -47,6 +59,76 @@ body{
     background: linear-gradient(90deg, rgba(34,95,95,1) 0%, rgba(25,64,64,1) 0%, rgba(1,40,46,1) 50%); 
 }
 .ofisin-main{
-    transform: translateY(-110px);
+    /* transform: translateY(-110px); */
+    transform: translateY(-120px);
     z-index: 1;
+}
+
+
+/* rating START*/
+.rating:not(:checked) > input {
+    position: absolute;
+    appearance: none;
+}
+    
+.rating:not(:checked) > label {
+    cursor: pointer;
+    font-size: 25px;
+    /* color: #666; */
+    color: #2F2E41;
+    opacity: 35%;
+    transition-duration: 250ms;
+}
+    
+.rating:not(:checked) > label:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;  
+    font-size: 18px;
+    content: "\f005";
+    vertical-align:text-top;
+}
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    color: #e58e09;
+    opacity: 100%;
+}
+    
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: #ff9e0b;
+    opacity: 100%;
+}
+    
+.rating > input:checked ~ label {
+    color: #ffa723;
+    opacity: 100%;
+}
+/* rating END*/
+
+.list-btn{
+    border: 1px solid #B9B9B9;
+    cursor: pointer;
+    background: transparent;
+    transition-duration: 250ms;
+}
+
+.list-btn  span{
+    font-weight: 200;
+    color: #2F2E41;
+ }
+ .list-btn:hover{
+    color: var(--green-color);
+}
+
+ .project-bookmark {
+    cursor: pointer;
+ }
+ .project-bookmark svg:hover{
+    color:var( --yellow-dark-color) ;
+}
+.project-bookmark .saved{
+    color:var( --yellow-dark-color) ;
 }
