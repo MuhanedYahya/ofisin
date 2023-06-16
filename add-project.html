@@ -211,9 +211,51 @@
                 </div>
             </div>
             <!-- project files -->
-            <div class="mb-5">
+            <div class="mb-4">
                 <label for="formFileLg" class="form-label">proje dosyaları (yalnızca .png , .jpeg veya .pdf)</label>
                 <input class="form-control form-control-lg" id="formFileLg" type="file" multiple>
+            </div>
+
+            <!-- project question -->
+            <!-- <div class="mb-5">
+                <label for="soru1" class="form-label">proje soruları</label>
+                <input type="text" class="form-control form-control-lg" id="soru1" placeholder="Hangi yetenekleri biliyorsun?">
+                <div class="form-check mt-2 ms-1">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      zorunlu
+                    </label>
+                </div>
+                <button class="add-question-btn p-2 mt-2">soru ekle</button>
+            </div> -->
+
+            <!-- project questions-accordion -->
+            <div class="accordion mb-4 questions-accordion" id="questions-accordion">
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                        ek sorular
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                        <!-- project question -->
+                        <div class="project-question">
+                            <input type="text" class="form-control form-control-lg" id="soru1" placeholder="Hangi yetenekleri biliyorsun?">
+                            <div class="form-check mt-2 ms-1">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    zorunlu
+                                </label>
+                            </div>
+                            <button class="add-question-btn p-2 mt-2">soru ekle</button>
+                        </div>
+
+                    </div>
+                  </div>
+                </div>
+
             </div>
 
             

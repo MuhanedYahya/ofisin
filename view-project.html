@@ -306,7 +306,7 @@
         <div class="col row justify-content-between rounded-2 p-0 mt-2">
 
             <!-- add offer for freelancers -->
-            <!-- <div class="col col-lg-8 add-offer-parent rounded-2 p-4 me-0 me-lg-3">
+            <div class="col-12 col-lg-8 col-lg-8 add-offer-parent rounded-2 p-4 me-0 me-lg-3 mb-2">
                 <h4>teklifinizi ekleyin</h4>
                 <hr>
                 <form class="add-offer-box mt-4">
@@ -324,16 +324,25 @@
                         <input class="form-control" type="file" id="formFileMultiple" multiple>
                     </div>
 
+                    <!-- project questions -->
+                    <div class="project-question mt-3">
+                        <!-- if the question is necessary add "necessary" class to the label -->
+                        <label for="soru1" class="form-label necessary">yapar mısın koçum?</label>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" id="soru1" aria-describedby="basic-addon3">
+                        </div>
+                    </div>
+
                     <button type="submit" class="w-100 ofisin-btn rounded-1 text-center mt-4 p-2">
                         ekle
                     </button>
 
                 </form>
-            </div> -->
+            </div>
 
 
             <!-- offers for project manager -->
-            <div class="col col-lg-8 add-offer-parent rounded-2 p-4 me-0 me-lg-3">
+            <div class="col-12 col-lg-8 add-offer-parent rounded-2 p-4 me-0 me-lg-3">
 
                 <!-- offers title -->
                 <div class="d-flex justify-content-between align-items-center">
@@ -355,37 +364,43 @@
 
                 <!-- offer box -->
                 <div class="offer">
-                    <div class="d-flex align-items-start">
-                        <!-- user profile pic -->
-                        <a href="#">
-                            <div class="user-pic me-2" title="view profile"></div>
-                        </a>
-                        <!-- user info & user rating-->
-                        <div>
-                            <h6> <a href="#" class="text-reset">muhaned yahya</a> </h6>
-                            <div class="d-flex align-items-center ">
-                                <p class="mb-0 me-2">avukat</p>
-                            
-                                <div class="rating d-inline-flex flex-row-reverse">
-                                    <!-- Add "checked" to the input tag until its evaluation -->
-                                    <input type="radio" id="star1" name="rate" value="1">
-                                    <label for="star1" title="rate"></label>
-                                    <input type="radio" id="star2" name="rate" value="2">
-                                    <label for="star2" title="rate"></label>
-                                    <input type="radio" id="star3" name="rate" value="3">
-                                    <label for="star3" title="rate"></label>
-                                    <input type="radio" id="star4" name="rate" value="4">
-                                    <label for="star4" title="rate"></label>
-                                    <input type="radio" id="star5" name="rate" value="5">
-                                    <label for="star5" title="text"></label> 
-                                </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex align-items-start">
+                            <!-- user profile pic -->
+                            <a href="#">
+                                <div class="user-pic me-2" title="view profile"></div>
+                            </a>
+                            <!-- user info & user rating-->
+                            <div>
+                                <h6> <a href="#" class="text-reset">muhaned yahya</a> </h6>
+                                <div class="d-flex align-items-center ">
+                                    <p class="mb-0 me-2">avukat</p>
                                 
-                                <span class="number-of-reviews ms-2">
-                                    &#40; 35 &#41;
-                                </span>
+                                    <div class="rating d-inline-flex flex-row-reverse">
+                                        <!-- Add "checked" to the input tag until its evaluation -->
+                                        <input type="radio" id="star1" name="rate" value="1">
+                                        <label for="star1" title="rate"></label>
+                                        <input type="radio" id="star2" name="rate" value="2">
+                                        <label for="star2" title="rate"></label>
+                                        <input type="radio" id="star3" name="rate" value="3">
+                                        <label for="star3" title="rate"></label>
+                                        <input type="radio" id="star4" name="rate" value="4">
+                                        <label for="star4" title="rate"></label>
+                                        <input type="radio" id="star5" name="rate" value="5">
+                                        <label for="star5" title="text"></label> 
+                                    </div>
+                                    
+                                    <span class="number-of-reviews ms-2">
+                                        &#40; 35 &#41;
+                                    </span>
+                                </div>
                             </div>
+    
                         </div>
-
+                        <!-- teklif değeri -->
+                        <div>
+                            <h3>1500 &#8378;</h3>
+                        </div>
                     </div>
                     <!-- user offer text -->
                     <div class="p-2 pb-0 pt-3">

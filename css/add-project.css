@@ -17,3 +17,32 @@
 .select-skill li{
     cursor: pointer;
 }
+
+.add-project-parent .form-check .form-check-label{
+    font-size: 1rem !important;
+}
+
+.add-project-parent .add-question-btn{
+    border: var(--grey-color);
+    text-transform: capitalize;
+}
+
+
+/* project questions accordion codes START */
+.questions-accordion .accordion-button {
+    background-color: unset;
+    box-shadow: unset ;
+    background-image: none ;
+    color: unset;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.accordion-button::after {
+    margin-left: 10px;
+  }
+.questions-accordion .accordion-button:not(.collapsed)::after {
+    background-image: var(--bs-accordion-btn-icon);
+    transform: var(--bs-accordion-btn-icon-transform);
+}
+
+  /* project questions accordion codes END */

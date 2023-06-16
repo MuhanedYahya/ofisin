@@ -143,3 +143,20 @@ h6 a:hover{
     max-width: 100px;
     cursor: pointer;
 }
+
+
+.project-question .form-label{
+    text-transform:none                                                                                                 ;
+}
+.necessary::after{
+    content: "*";
+    color: red;
+    left: 0;
+    top: 0;
+    margin-left: 10px;
+}
+
+.offer h3{
+    color: var(--purple-color);
+    font-weight: 400;
+}
